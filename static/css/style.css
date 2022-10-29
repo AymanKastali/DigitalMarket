@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgColor: #343a40;
+    --navColor: #212529;
+    --mainText: white;
+    --secondaryText: #ced4da;
+    --borderColor: #e26d5c;
+    --hoverColor: #0582ca;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    color: var(--mainText);
+    /* font-family: 'Russo One', sans-serif; */
+}
+
+b {
+    color: #e26d5c !important;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea,
+small {
+    color: var(--secondaryText);
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--mainText) !important;
+    transition: ease 0.3s;
+}
+
+a:hover {
+    color: var(--hoverColor) !important;
+}
+
+body {
+    /* background-color: rgb(250, 250, 250) !important; */
+    background-color: #343a40 !important;
+}
+
+#nav-logo-span {
+    color: var(--borderColor);
+}
+
+.offcanvas-body {
+    background-color: var(--bgColor);
+}
+
+#nav-search {
+    background-color: transparent;
+    color: var(--mainText);
+    border: 1px solid var(--borderColor);
+}
+
+#nav-menu {
+    background-color: var(--bgColor);
+}
+
+.car-card-title {
+    color: var(--borderColor);
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 2px var(--borderColor);
+}
+
+.card {
+    transition: border-color 1s, box-shadow 0.3s;
+}
+
+.swiper-slide {
+    padding: 5px;
+    font-size: 16px!important;
+}

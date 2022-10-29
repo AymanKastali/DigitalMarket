@@ -1,0 +1,156 @@
+{% extends 'base.html' %} {% block content %}
+<br>
+<section>
+    <div>
+        <div class="card shadow bg-dark text-white">
+            <img style="padding: 0;object-fit: cover; height: 400px; border: none; opacity: 0.9;filter: grayscale(0.2)" src="https://www.teahub.io/photos/full/78-789781_wallpaper-usa-new-york-top-view-skyscrapers-new.jpg" class="card-img w-100" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title text-center">The best place to buy your house, sell your car or find a job in Dubai.</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Swiper -->
+    <h1>Testimonials</h1>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-color: transparent;">
+                <div class="card rounded bg-dark">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(28).webp" class="rounded-circle shadow-1-strong" style="padding: 0;object-fit: cover; height: 75px;width: 75px; border: none;" />
+                        </div>
+                        <figure class="text-center mb-0">
+                            <blockquote class="blockquote mb-4">
+                                <p>
+                                    <small style="font-size: 14px;"><i class="bi bi-quote"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatursint nesciunt ad itaque aperiam expedita officiis incidunt minus facere molestiasinventore. <i class="bi bi-quote end-quote"></i></small>
+                                </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0">
+                                Kate Williams in <cite title="Source Title">Vogue</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-color: transparent;">
+                <div class="card rounded bg-dark">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(28).webp" class="rounded-circle shadow-1-strong" style="padding: 0;object-fit: cover; height: 75px;width: 75px; border: none;" />
+                        </div>
+                        <figure class="text-center mb-0">
+                            <blockquote class="blockquote mb-4">
+                                <p>
+                                    <small style="font-size: 14px;"><i class="bi bi-quote"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatursint nesciunt ad itaque aperiam expedita officiis incidunt minus facere molestiasinventore. <i class="bi bi-quote end-quote"></i></small>
+                                </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0">
+                                Kate Williams in <cite title="Source Title">Vogue</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-color: transparent;">
+                <div class="card rounded bg-dark">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(28).webp" class="rounded-circle shadow-1-strong" style="padding: 0;object-fit: cover; height: 75px;width: 75px; border: none;" />
+                        </div>
+                        <figure class="text-center mb-0">
+                            <blockquote class="blockquote mb-4">
+                                <p>
+                                    <small style="font-size: 14px;"><i class="bi bi-quote"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatursint nesciunt ad itaque aperiam expedita officiis incidunt minus facere molestiasinventore. <i class="bi bi-quote end-quote"></i></small>
+                                </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0">
+                                Kate Williams in <cite title="Source Title">Vogue</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-color: transparent;">
+                <div class="card rounded bg-dark">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(28).webp" class="rounded-circle shadow-1-strong" style="padding: 0;object-fit: cover; height: 75px;width: 75px; border: none;" />
+                        </div>
+                        <figure class="text-center mb-0">
+                            <blockquote class="blockquote mb-4">
+                                <p>
+                                    <small style="font-size: 14px;"><i class="bi bi-quote"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatursint nesciunt ad itaque aperiam expedita officiis incidunt minus facere molestiasinventore. <i class="bi bi-quote end-quote"></i></small>
+                                </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0">
+                                Kate Williams in <cite title="Source Title">Vogue</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cars-swipper-controls">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %} {% block script %}
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        // slidesPerView: 5,
+        // spaceBetween: 30,
+        // slidesPerGroup: 5,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        // autoplay: {
+        //     delay: 4000,
+        //     disableOnInteraction: false,
+        // },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            400: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                slidesPerGroup: 2,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                slidesPerGroup: 2,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                slidesPerGroup: 3,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                slidesPerGroup: 3,
+            }
+        },
+    });
+</script>
+{% endblock %}

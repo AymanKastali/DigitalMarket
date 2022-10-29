@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg bg-dark main-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'index' %}"><span id="nav-logo-span">Digital</span>Market</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="justify-content: space-between;" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div>
+                <form class="d-flex">
+                    <input id="nav-search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'browse' %}"><i class="bi bi-search"></i> Browse</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="popover" title="Latest Notifications" data-bs-content="<b>strong</b>"><i class="bi bi-bell"></i> Notifications</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightNotifications" aria-controls="offcanvasRight"><i class="bi bi-bell"></i> Notifications</a>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightNotifications" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header bg-dark">
+                                <h5 id="offcanvasRightLabel2">Notifications</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'favorites' %}"><i class="bi bi-heart"></i> Favorites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'bookmarks' %}"><i class="bi bi-bookmarks"></i> Bookmarks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightChats" aria-controls="offcanvasRight"><i class="bi bi-chat-text"></i> Chats</a>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightChats" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header bg-dark">
+                                <h5 id="offcanvasRightLabel">Recent Chats</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'ads' %}"><i class="bi bi-badge-ad"></i> My Ads</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i> user</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" id="nav-menu">
+                            <li><a class="dropdown-item" href="">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

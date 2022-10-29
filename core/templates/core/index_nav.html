@@ -1,0 +1,19 @@
+<nav>
+    <div class="nav nav-tabs" style="justify-content: space-evenly" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-Cars-tab" data-bs-toggle="tab" data-bs-target="#nav-Cars" type="button" role="tab" aria-controls="nav-Cars" aria-selected="true"><b>Cars</b></button>
+      <button class="nav-link" id="nav-rent-tab" data-bs-toggle="tab" data-bs-target="#nav-rent" type="button" role="tab" aria-controls="nav-rent" aria-selected="false"><b>Property for Rent</b></button>
+      <button class="nav-link" id="nav-sale-tab" data-bs-toggle="tab" data-bs-target="#nav-sale" type="button" role="tab" aria-controls="nav-sale" aria-selected="false"><b>Property for Sale</b></button>
+      <button class="nav-link" id="nav-furniture-tab" data-bs-toggle="tab" data-bs-target="#nav-furniture" type="button" role="tab" aria-controls="nav-furniture" aria-selected="false"><b>Furniture</b></button>
+      <button class="nav-link" id="nav-mobiles-tab" data-bs-toggle="tab" data-bs-target="#nav-mobiles" type="button" role="tab" aria-controls="nav-mobiles" aria-selected="false"><b>Mobiles</b></button>
+      <button class="nav-link" id="nav-jobs-tab" data-bs-toggle="tab" data-bs-target="#nav-jobs" type="button" role="tab" aria-controls="nav-jobs" aria-selected="false"><b>Jobs</b></button>
+    </div>
+</nav>
+<br>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-Cars" role="tabpanel" aria-labelledby="nav-Cars-tab">{% include 'core/cars.html' %}</div>
+    <div class="tab-pane fade" id="nav-rent" role="tabpanel" aria-labelledby="nav-rent-tab">{% include 'core/rent.html' %}</div>
+    <div class="tab-pane fade" id="nav-sale" role="tabpanel" aria-labelledby="nav-sale-tab">{% include 'core/sale.html' %}</div>
+    <div class="tab-pane fade" id="nav-furniture" role="tabpanel" aria-labelledby="nav-furniture-tab">{% include 'core/furniture.html' %}</div>
+    <div class="tab-pane fade" id="nav-mobiles" role="tabpanel" aria-labelledby="nav-mobiles-tab">{% include 'core/mobiles.html' %}</div>
+    <div class="tab-pane fade" id="nav-jobs" role="tabpanel" aria-labelledby="nav-jobs-tab">{% include 'core/jobs.html' %}</div>
+  </div>
